@@ -51,7 +51,7 @@ public class EventGridConsumerController {
     public ResponseEntity<?> subscribe(@RequestBody List<Event> body, @RequestHeader HttpHeaders headers, @RequestHeader(value = "supplierName") String supplierName){
 
         log.info("In subscribe Function");
-        log.info("header supplierName" + supplierName);
+        log.info("header supplierName {} : ", supplierName);
 
         printHeaders(headers);
 
